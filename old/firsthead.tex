@@ -1,0 +1,66 @@
+\documentclass[a4paper,
+    pagenumber=false,
+    parskip=full,
+    fontsize=11pt,
+    fromalign=location,
+    firstfoot=false,
+    fromphone=true,
+    fromemail=true,
+    fromrule=false,
+    foldmarks=false,
+    enlargefirstpage,
+]{scrlttr2}
+\usepackage[english]{babel}
+\usepackage[T1]{fontenc} 
+\usepackage{lmodern}
+\usepackage[utf8]{inputenc}
+\usepackage{marvosym}   
+\usepackage{blindtext}
+
+\newcommand{\myFirstname}{John}
+\newcommand{\myFamilyname}{Doe}
+\newcommand{\myStreet}{3500 West Olive Avenue}
+\newcommand{\myTown}{Burbank, CA 91505-5512}
+
+
+\setkomavar{date}{\today} 
+\setkomavar{fromname}{\myFirstname\ \myFamilyname}
+\setkomavar{signature}{\myFirstname\ \myFamilyname}
+\setkomavar{fromaddress}{\myStreet\\\myTown}
+\setkomavar{backaddress}{\myFirstname\ \myFamilyname, \myStreet , \myTown}
+\setkomavar{place}{Burbank}
+\setkomavar{fromphone}[\Mobilefone\,]{(01\,23)\,45\,67\,89\,10}
+\setkomavar{fromemail}[\Letter\,]{john.doe@email.de}
+
+\renewcommand*\familydefault{\sfdefault}
+
+\let\raggedsignature\raggedright
+
+\usepackage{xcolor}
+\usepackage{scrlayer-scrpage}
+\clearmainofpairofpagestyles
+\chead{\normalfont\Huge\color{red}Headline}
+\RedeclarePageStyleAlias{empty}{scrheadings}
+
+
+\setkomavar{subject}{Dies hier ist ein Blindtext zum Testen von Textausgaben.
+}
+\begin{document}
+%
+\begin{letter}{Richard M Winsor\\
+2192 Lawman Avenue\\ 
+Arlington\\
+22204 Virginia
+}
+%
+\opening{Dear Mr Winsor,}
+%
+\blindtext[1]
+\noindent \blindtext[4]
+
+
+\closing{Yours sincerely,}
+\end{letter}
+
+\end{document}
+

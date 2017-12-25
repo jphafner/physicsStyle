@@ -1,0 +1,15 @@
+\begin{filecontents*}{absender.lco}
+\ProvidesFile{absender.lco}
+\setkomavar{fromname}{NAME}
+\setkomavar{fromaddress}{Adress}
+
+\setkomavar{firsthead}{\parbox{\linewidth}{\fbox{my letter header}}}
+\setkomavar{nexthead}{\usekomavar{firsthead}}
+
+\setkomavar{firstfoot}{\parbox{\linewidth}{\fbox{my letter footer}}}
+\setkomavar{nextfoot}{\usekomavar{firstfoot}}
+
+\pagestyle{myheadings}
+\end{filecontents*}
+
+

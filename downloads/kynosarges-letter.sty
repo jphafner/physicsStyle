@@ -1,0 +1,91 @@
+%%
+%% This is file `kynosarges-letter.sty' for use with LaTeX2e.
+%% Written by Christoph Nahr.
+%%
+\def\fileversion{1.1}
+\def\filedate{2014/07/06}
+\def\docdate {2012/07/11}
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{kynosarges-letter}[\filedate\space\fileversion\space Kynosarges Letter style package]
+\usepackage{mathspec} % includes fontspec
+
+% fontspec & mathspec: load custom system fonts
+\setmainfont[Ligatures={Common,TeX}]{Minion Pro}
+\setsansfont[Ligatures={Common,TeX}]{Myriad Pro}
+\setmonofont[FakeStretch=0.8]{Consolas}
+\setmathfont(Digits,Latin,Greek)[Numbers={Lining,Proportional}]{Minion Pro}
+\setmathrm{Minion Pro}
+\setmathsf{Myriad Pro}
+\setmathtt[FakeStretch=0.8]{Consolas}
+
+% general formatting adjustments
+\renewcommand*{\labelitemi}{---}
+\renewcommand*{\labelitemii}{$\bullet$}
+\setlength{\parindent}{3em} % equals list & footnote indentation
+\setlength{\footnotesep}{\baselineskip}
+
+% KOMA-Script: increase footnote number size & footnote indentation
+\deffootnote[3em]{0em}{3em}{\thefootnotemark.~}
+
+% KOMA-Script: adjust fonts and labeling list separator
+\setkomafont{labelinglabel}{\sffamily\bfseries}
+\setkomafont{labelingseparator}{\normalfont}
+\newcommand*{\labelingsep}{\enskip{}---}
+
+% format for calling out in-line text
+\newcommand*{\callout}{\sffamily\bfseries}
+
+% indent paragraphs in list items like body text
+\newcommand*{\paritems}{\parskip 0pt \parsep 0pt \parindent 1.5em}
+
+% insert additional vertical space in table rows
+\newcommand*{\cleartop}{\rule{0pt}{2.6ex}}
+\newcommand*{\clearbtm}{\rule[-1.2ex]{0pt}{0pt}}
+
+% scrlttr2: full sender information
+\setkomavar{fromname}{Max Absender}
+\setkomavar{fromaddress}{Hinterm Berg 2\\D-98765 Musterdorf}
+
+% scrlttr2: align phone & fax numbers
+\newlength{\fromphoneWidth}
+\settowidth{\fromphoneWidth}{Telefon\enskip}
+\setkomavar{fromphone}{\makebox[\fromphoneWidth][l]{Telefon}(0123) 456 78 90}
+\setkomavar{fromfax}{\makebox[\fromphoneWidth][l]{Telefax}(0123) 456 78 90}
+\setkomavar{fromemail}{max.absender@gmail.com}
+
+% scrlttr2: bank name & account numbers
+\setkomavar{frombank}{Bank Musterdorf\\
+BIC / IBAN\enskip{}BMUSTERDORF\\
+DE23 1020 3040 5060 7080 90}
+
+% scrlttr2: custom headings and general options
+\pagestyle{myheadings}
+\KOMAoptions{headsepline,footsepline,
+	headinclude=false,footinclude=false}
+\recalctypearea % see http://www.komascript.de/node/1838
+\setkomavar*{enclseparator}{\textbf{Anlage}}
+
+% scrlttr2: sender address in window above recipient
+\setkomavar{backaddress}{\usekomavar{fromname}\\\usekomavar{fromaddress}}
+\setkomavar{backaddressseparator}{~$\bullet$~}
+
+% scrlttr2: full sender information on top of first page
+\setkomavar{firsthead}{%
+\parbox[t]{\textwidth}{\sffamily\footnotesize
+\begin{tabular}[t]{@{}l@{}}%
+\usekomavar{fromname}\\\usekomavar{fromaddress}
+\end{tabular}%
+\hfill\begin{tabular}[t]{@{}l@{}}%
+\usekomavar{fromphone}\\\usekomavar{fromfax}\\\usekomavar{fromemail}
+\end{tabular}%
+\hfill\begin{tabular}[t]{@{}l@{}}%
+\usekomavar{frombank}\end{tabular}}
+\vskip 2pt\hrule}
+
+% scrlttr2: sender place & date on top of other pages
+\setkomavar{nexthead}{%
+\hfill\usekomavar{place}\usekomavar{placeseparator}\usekomavar{date}\hfill}
+
+%%
+%% End of file `kynosarges-letter.sty'.

@@ -1,0 +1,24 @@
+\documentclass{scrlttr2}
+\LoadLetterOption{absender} % Absenderdaten und -einstellungen aus absender.lco laden
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+
+\usepackage{blindtext}% dummy text
+
+\usepackage{scrlayer-scrpage}
+\ihead{scrlayer-scrpage}
+\ifoot{scrlayer-scrpage}
+
+\begin{document}
+  \begin{letter}{%
+      Erika Musterfrau\\
+      Musterweg 43\\
+      56789 Musterhausen%
+    }
+    \setkomavar{title}{Titel}
+    \setkomavar{subject}{Betreff}
+    \opening{Sehr geehrte Frau Musterfrau,}
+    \Blindtext 
+    \closing{Mit freundlichen Grüßen,}
+  \end{letter}
+\end{document}

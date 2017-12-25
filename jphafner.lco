@@ -1,0 +1,50 @@
+\ProvidesFile{jphafner.lco}[2017/12/22]
+
+\KOMAoptions{paper=letter}
+
+\setkomavar{fromname}{Jeffrey Hafner}
+\setkomavar{signature}{Jeffrey Hafner}
+\setkomavar{fromaddress}{%
+    125 Radford St Apt 5A \\
+    Yonkers, NY 10705}
+
+\setkomavar{fromemail}{jphafner@buffalo.edu}\KOMAoptions{fromemail=true}
+%\setkomavar{fromfax}{+1 888 555 4223}\KOMAoptions{fromfax=true}
+%\setkomavar{frommobilephone}{+1 315 532 0278}\KOMAoptions{frommobilephone=true}
+
+\setkomavar{fromphone}{+1 315 532 0278}\KOMAoptions{fromphone=true}
+\setkomavar{fromurl}{jphafner.github.io}\KOMAoptions{fromurl=true}
+
+\date{\today}
+
+%\setkomavar{location}{%
+%  \raggedright\footnotesize{%
+%  \usekomavar{fromname}\\
+%  \usekomavar{fromaddress}\\
+%  \usekomavar*{fromphone}\usekomavar{fromphone}\\
+%  \usekomavar*{fromfax}\usekomavar{fromfax}\\
+%  \usekomavar*{fromemail}\usekomavar{fromemail}
+%  \usekomavar*{fromurl}\usekomavar{fromurl}}%
+%}
+
+%\setkomavar{opening}{Dear Sir or Madam,}
+%\setkomavar{closing}{Sincerely,}
+
+\setkomavar{firstfoot}{THIS IS THE FIRST FOOT}\KOMAoptions{firstfoot=true}
+
+
+%\setkomavar{firsthead}{%
+%  {\usekomafont{headtitle}\usekomavar{headtitle}\\}
+%  {\usekomafont{headsubtitle}\usekomavar{headsubtitle}\\}
+%  \noindent\hspace*{-\useplength{firstheadhpos}}%
+%  \includegraphics[width=\paperwidth]{uclbanner-outline}%
+%}
+
+\setkomavar{firstfoot}{%
+  \parbox[b]{\useplength{firstfootwidth}}{\raggedright
+  {\usekomafont{fromaddress}\usekomavar{fromaddress}
+  \ifkomavarempty{fromphone}{%
+    \ifkomavarempty{fromfax}{}{%
+      \\\usekomavar*{fromfax}\usekomavar{fromfax}%
+    }
+
