@@ -1,0 +1,217 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Twenty Seconds Resume/CV
+% LaTeX Template
+% Version 1.0 (14/7/16)
+%
+% Original author:
+% Carmine Spagnuolo (cspagnuolo@unisa.it) with major modifications by 
+% Vel (vel@LaTeXTemplates.com) and Harsh (harsh.gadgil@gmail.com)
+%
+% License:
+% The MIT License (see included LICENSE file)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[letterpaper]{twentysecondcv} % a4paper for A4
+
+% Command for printing skill overview bubbles
+\newcommand\skills{ 
+~
+	\smartdiagram[bubble diagram]{
+        \textbf{Data}\\\textbf{Engineering},
+        \textbf{Full Stack}\\\textbf{Web Dev},
+        \textbf{~~~~~OOP~~~~~~},
+        \textbf{Mobile}\\\textbf{Dev},
+        \textbf{Machine}\\\textbf{Learning},
+        \textbf{Test}\\\textbf{~~Automation~~},
+        \textbf{Statistical}\\\textbf{Analysis}
+    }
+}
+
+% Programming skill bars
+% changed \textbullet to \bullet
+\programming{{$\bullet$ C/C++/ 5},  $\bullet$ R / 3}, {$\bullet$ \LaTeX / 3.5}, {HTML5 $\bullet$ JS $\bullet$ Python / 5}
+
+% Projects text
+\projects{
+%% Locate transcript for both undergrad and graduate 
+
+    \textbf{BIO544??} Created a 2-dimensional hydrophoic-polar (2D HP) protein folder utilizing an Ant Colony Optimization Algorithm in Python
+    %\url{https://en.wikipedia.org/wiki/Hydrophobic-polar_protein_folding_model}
+    %\url{https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms}
+    \textbf{PHY477} Validated predicted reverberation times based on blue prints of the \href{Howard Performing Arts Center}{https://howard.andrews.edu}
+    \textbf{PHY551} Josepheon junction
+
+    \textbf{PHY515} Parallelized my dissertation utilizing ScaLAPACK
+    %\url{http://www.netlib.org/scalapack/}
+    \textbf{PHY516} Implemented a cellular automata traffic simulator in Python
+
+    \textbf{Thesis}: Validation and Refinement of Coarse-Grained Protein Models
+    
+    \textbf{NSF REU} - Implemented a Monte Carlo modeler kinesin processivity
+
+    \textbf{\href{PhysicsAMC}{https://github.com/jphafner/physicsAMC}} - A comprehensive test bank of physics questions
+
+    A comprehensive physics question bank with an lpeg parser for question selection,
+     that can generate professionally typeset exams:
+    \href{exam}{https://github.com/jphafner/physicsAMC/blob/mc-project/kinematics-exam/sample-exam.pdf}
+    \href{quiz1}{https://github.com/jphafner/physicsAMC/blob/mc-project/kinematics-full/sample-full.pdf}
+    \href{quiz2}{https://github.com/jphafner/physicsAMC/blob/mc-project/kinematics-half/sample-half.pdf}
+}
+
+%----------------------------------------------------------------------------------------
+%	 PERSONAL INFORMATION
+%----------------------------------------------------------------------------------------
+% If you don't need one or more of the below, just remove the content leaving the command, e.g. \cvnumberphone{}
+
+\cvname{Jeffrey Hafner} % Your name
+\cvjobtitle{Physicist} % title/career
+
+\cvlinkedin{/in/jphafner}
+\cvgithub{jphafner}
+\cvnumberphone{(315) 532 0278} % Phone number
+\cvsite{jphafner.github.io} % Personal website
+\cvmail{jphafner@buffalo.edu} % Email address
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makeprofile % Print the sidebar
+
+%----------------------------------------------------------------------------------------
+%	 EDUCATION
+%----------------------------------------------------------------------------------------
+\section{Education}
+
+\begin{twenty} % Environment for a list with descriptions
+	\twentyitem
+    	{2006 - 2012}
+        {}
+        {Pdh., Physics \textnormal{(GPA: 3.51)}}
+        {\href{http://www.buffalo.edu/}{University at Buffalo, SUNY}}
+        {}{}
+	\twentyitem
+    	{2001 - 2006}
+		{}
+        {MS/BS., Biophysics}
+        {\href{http://www.andrews.edu/}{Andrews University, Michigan}}
+        {}{}
+	%\twentyitem{<dates>}{<title>}{<organization>}{<location>}{<description>}
+\end{twenty}
+
+\section{Research}
+\begin{twenty}
+	\twentyitem
+    	{2008- 2011}
+		{Buffalo., NY}
+        {Phd. Candidate, Graduate Research Assistant}
+        {\href{http://www.buffalo.edu/}{University at Buffalo, SUNY}}
+        {}
+        {
+       	\textbf{Thesis}: Validation and Refinement of Coarse-Grained Protein Models
+        {\begin{itemize}
+            \item Validated coarse grained protein models against x-ray temperature factors using structural data from The \href{http://www.rcsb.org/pdb/home/home.do}{Protein Data Bank}
+            \item \textbf{Tools}: C, BLAST, Python, matplotlib \vspace{2mm}
+		\end{itemize}}
+        }
+\end{twenty}
+
+\section{Publications}
+
+Hafner J \& Zheng W. All-atom modeling of anisotropic atomic fluctuations in protein crystal structures. J. Chem. Phys. 135, 144114 (2011).
+   \href{http://www.acsu.buffalo.edu/~wjzheng/Hafner_jcp2011.pdf}{PDF}
+   \href{http://aip.scitation.org/doi/10.1063/1.3646312}{DOI}
+
+Hafner J \& Zheng W. Optimal modeling of atomic fluctuations in protein crystal structures for weak crystal contact interactions. J. Chem. Phys. 132, 014111 (2010).
+  \href{http://www.acsu.buffalo.edu/~wjzheng/Hafner_jcp2010.pdf}{PDF}
+  \href{http://aip.scitation.org/doi/10.1063/1.3288503}{DOI}
+
+Hafner J \& Zheng W. Approximate normal mode analysis based on vibrational subsystem analysis with high accuracy and efficiency. J. Chem. Phys. 130, 194111 (2009).
+ \href{http://www.acsu.buffalo.edu/~wjzheng/Hafner_jcp2009.pdf}{PDF}
+ \href{http://aip.scitation.org/doi/10.1063/1.3141022}{DOI}
+
+
+
+%----------------------------------------------------------------------------------------
+%	 EXPERIENCE
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\begin{twenty} % Environment for a list with descriptions
+\twentyitem
+    	{August 2016 -}
+		{Present}
+        {Unix/Automation Engineeer}
+        {\href{http://www.ipsoft.com/}{IPsoft}}
+        {New York, NY}
+        {\begin{itemize}
+        \item Provide Unix and automation services to clients through an ITIL framework
+        \item Utilizing \href{https://ansible.com}{Ansible} and \href{https://www.ipsoft.com/ipcenter/}{IPsoft automatas} (proprietary, mostly javascript) %\href{IPsoft 1desk}{https://www.ipsoft.com/1desk/}
+        \end{itemize}}
+        \\
+	\twentyitem
+    	{August 2015 -}
+		{May 2016}
+        {Physics Teacher}
+        {\href{http://www.mastersny.org/}{The Masters School}}
+        {Dobbs Ferry, NY}
+        {
+        {\begin{itemize}
+        \item Teaching 11\textsuperscript{th} grade and AP Physics B Mechanics.
+        \item An example lesson plan \href{physicsReport}{https://github.com/jphafner/physicsReport}
+    	\end{itemize}}
+        }
+    \\   
+    \twentyitem
+   		{April 2014 -}
+		{May 2015}
+        {Physics Teacher}
+        {\href{http://www.baltimorecityschools.org}{Baltimore City Public Schools}}
+        {Baltimore, MD}
+        {
+        {\begin{itemize}
+        \item Teaching \href{physics first}{https://en.wikipedia.org/wiki/Physics_First} at \href{https://mervo.org}{Mervo}.
+        \item Implemented a unique assessment system utilizing lua and \LaTeX
+        %\href{PhysicsAMC}{https://github.com/jphafner/physicsAMC}
+    \end{itemize}}
+        }
+     \\
+     \twentyitem
+   		{Feb 2012 -}
+		{Dec 2012}
+        {Postdoctoral}
+        {\href{http://www.ou.edu/cas/chemistry/}{Department of Chemistry \& Biochemistry, The University of Oklahoma}
+        {\href{http://pharmacy.umaryland.edu}{University of Maryland School of Pharmacy}
+        }
+        {Norman, OK and Baltimore, MD}
+        {
+        \begin{itemize}
+        \item Implementation of Continous constant pH Molecular Dynamics in CHARMM utilizing Particle Mesh Ewald electrostatics
+            %\url{https://www.charmm.org/charmm/program/}
+            %\url{https://hpc.nih.gov/apps/charmm/c39b2html/phmd.html}
+            %\url{https://sites.google.com/site/cphmdtutorial/objective}
+    \end{itemize}
+    	}
+     \twentyitem
+   		{Dec 2013 -}
+		{Apr 2015}
+        {Research Assistant}
+        {\href{http://www.buffalo.edu/}{University at Buffalo, SUNY}}
+        {Buffalo, NY}
+        {
+        \begin{itemize}
+        \item Published three peer reviewed papers
+        \item Implemented all code using C and Python in a \href{http://www.buffalo.edu/ccr.html}{High Performance Computing Environment}
+    \end{itemize}
+    	}
+        
+	%\twentyitem{<dates>}{<title>}{<location>}{<description>}
+\end{twenty}
+
+\end{document} 
