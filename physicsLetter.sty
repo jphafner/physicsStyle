@@ -1,0 +1,118 @@
+%%
+%% Copyright (C) 2014 Jeffrey P. Hafner <jphafner@bcps.k12.md.us>
+%%
+%%  This file is part of mervoPhysics
+%%  
+%%  mervoPhysics is free software: you can redistribute it and/or modify
+%%  it under the terms of the GNU General Public License as published by
+%%  the Free Software Foundation, either version 3 of the License, or
+%%  (at your option) any later version.
+%%  
+%%  This program is distributed in the hope that it will be useful,
+%%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%%  GNU General Public License for more details.
+%%  
+%%  You should have received a copy of the GNU General Public License
+%%  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+%%
+
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{physicsLetter}
+
+
+%% Package Definitions
+%%------------------------------------------------
+\RequirePackage{booktabs}
+\RequirePackage{color}
+\RequirePackage{csquotes}
+\RequirePackage{environ}
+\RequirePackage[shortlabels,inline]{enumitem}
+\RequirePackage{graphicx}
+\RequirePackage{lipsum}
+\RequirePackage{multicol}
+\RequirePackage{physics}
+\RequirePackage{tabu}
+\RequirePackage{verbatim}
+\RequirePackage{xfrac}
+
+
+%% Font and Language Selections
+%%------------------------------------------------
+\RequirePackage{fontenc}
+\RequirePackage{fouriernc}
+%\RequirePackage[widespace,oldstyle]{fourier}
+
+%\RequirePackage{gentium}           
+%\RequirePackage[T2A]{fontenc}
+%\RequirePackage{libertine}
+%\RequirePackage[utopia]{mathdesign}
+%\RequirePackage[charter]{mathdesign}
+%\RequirePackage[urw-garamond]{mathdesign}
+%\RequirePackage{pifont}
+
+\RequirePackage{polyglossia}
+    \setdefaultlanguage{english}
+
+
+%% Math and SI Units
+%%------------------------------------------------
+\RequirePackage{amsmath}
+%\RequirePackage{amsfonts}  % conflicts with mathdesign
+%\RequirePackage{amssymb}   % conflicts with mathdesign
+
+\RequirePackage{siunitx}
+\sisetup{
+    output-product = \cdot,
+    quotient-mode = fraction,
+    fraction-function = \sfrac, %%\dfrac, \tfrac
+    per-mode=symbol,            %% fraction
+}
+
+%% \begin{tabular}{ss}
+
+
+%% PGF and Tikz Libraries
+%%------------------------------------------------
+%\RequirePackage{tikz}
+
+
+%% Hyper References
+%%------------------------------------------------
+\RequirePackage[pdftex]{hyperref}
+\hypersetup{
+    colorlinks,
+    citecolor=black,
+    filecolor=black,
+    linkcolor=black,
+    urlcolor=black,
+}
+
+
+%% Bibliography
+%%------------------------------------------------
+
+% backend   = biber, bibtex
+% style     = authoryear, numeric, alphabetic
+
+\PassOptionsToPackage{
+    backend=bibtex,
+    hyperref=true,
+    url=false,
+    isbn=false,
+    backref=false,
+    maxcitenames=3,
+    maxbibnames=3,
+    style=phys,
+    %firstinits=true,
+    %sorting=none,
+    block=none,
+}{biblatex}
+\RequirePackage{biblatex}
+
+%\endinput
+
+%%------------------------------------------------
+%% End of Mervo Letter Style File
+%%------------------------------------------------
+
