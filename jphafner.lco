@@ -15,7 +15,8 @@
 \setkomavar{frommobilephone}{+1 315 532 0278}\KOMAoptions{frommobilephone=true}
 \setkomavar{fromemail}{jphafner@buffalo.edu}\KOMAoptions{fromemail=true}
 \setkomavar{signature}{\usekomavar{fromname}}
-%\setkomavar{fromlogo}{\includegraphics{headshot}}
+\setkomavar{fromlogo}{\includegraphics{headshot}}
+%\setkomavar{fromlogo}{\includegraphics{\includeimg{img/IMG_1417-10.jpg}}
 \setkomavar{fromurl}{jphafner.github.io}\KOMAoptions{fromurl=true}
 
 %% Page Style
