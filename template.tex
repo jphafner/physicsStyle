@@ -1,0 +1,147 @@
+%% start of file `template.tex'.
+%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+
+% moderncv themes
+\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
+\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
+%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
+%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
+
+% character encoding
+%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+
+% adjust the page margins
+\usepackage[scale=0.75]{geometry}
+%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
+%\setlength{\makecvheadnamewidth}{10cm}            % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+
+\usepackage[
+    style=numeric,
+    sorting=ydnt,
+    defernumbers=true,
+    backend=biber
+]{biblatex}
+\addbibresource{publications.bib}
+
+% personal data
+\name{Jeffrey}{Hafner}
+\title{Physicist}                               % optional, remove / comment the line if not wanted
+\address{125 Radford St 5A}{Yonkers, NY}{USA}
+\phone[mobile]{+1-315-532-0278} % mobile/fixed/fax
+\email{jphafner@buffalo.edu}
+\homepage{jphafner.github.io}
+\social[linkedin]{jphafner}
+\social[github]{jphafner}
+%\extrainfo{additional information}
+\photo[64pt][0.4pt]{picture}                       % optional, remove / comment the line if not wanted; '64pt' is the height the picture must be resized to, 0.4pt is the thickness of the frame around it (put it to 0pt for no frame) and 'picture' is the name of the picture file
+\quote{Take at least one thing off --Coco Chanel}                                 % optional, remove / comment the line if not wanted
+
+% bibliography adjustements (only useful if you make citations in your resume, or print a list of publications using BibTeX)
+%   to show numerical labels in the bibliography (default is to show no labels)
+%\makeatletter\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}\makeatother
+\renewcommand*{\bibliographyitemlabel}{[\arabic{enumiv}]}
+%   to redefine the bibliography heading string ("Publications")
+%\renewcommand{\refname}{Articles}
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+%-----       resume       ---------------------------------------------------------
+\makecvtitle
+
+
+    \section{Education}
+    \cventry{2001--2006}{BS/MS}{\href{www.andrews.edu}{Andrews University}}{Berrien Springs, MI}{\textit{3.32}}{Biophysics}
+    \cventry{2006--2012}{PhD}{\href{www.buffalo.edu}{University at Buffalo}}{Buffalo, NY}{\textit{3.51}}{Physics}
+
+    \section{Experience}
+    \subsection{Vocational}
+    \cventry{2008--2011}{Research Assistant}{University at Buffalo}{Buffalo, NY}{}{ }
+    \cventry{2012}{Postdoctoral}{University at Maryland}{Baltimore, MD}{}{Implementation of Particle Mesh Ewald Electrostatics}
+    \cventry{2013--2014}{Physics Teacher}{Baltimore City Public Schools}{Baltimore, MD}{}{Teaching a physics first course at Mervo}
+    \cventry{2014--2015}{Physics Teacher}{Masters School}{Dobbs Ferry, NY}{}{Teaching 11th grade physics and AP Physics B Mechanics}
+    \cventry{2016--}{Unix/Automation Engineer}{IPsoft}{New York, NY}{}{Unix and Automation through an ITIL framework}
+
+    \subsection{Projects}
+    \cvitem{PHY776: Advanced Lab II}{Validated predicted reverberation times from blue prints of the Howard Performing Arts Center}
+    \cvitem{PHY506: Computational Physics II}{}{Implemented Cellular Automata traffic modeler to investigate traffic phase shifts in Python}
+    \cvitem{DATE}{PHY536: Computational Biology}{}{Implemented 2D Hydrophobic-polar protein folder utilizing an Ant Colony Optimization Algorithm in Python}
+    \cvitem{DATE}{PHY515: High Performance Computing}{}{Parallized my doctoral disseration utilizing ScaLapack}
+
+\section{Doctoral thesis}
+\cvitem{title}{\emph{Title}}
+\cvitem{supervisors}{Supervisors}
+\cvitem{description}{Validation and refinement of coarse grained protein models}
+
+\section{Experience}
+\subsection{Vocational}
+\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline{}%
+Detailed achievements:%
+\begin{itemize}%
+\item Achievement 1;
+\item Achievement 2, with sub-achievements:
+  \begin{itemize}%
+  \item Sub-achievement (a);
+  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+    \begin{itemize}
+    \item Sub-sub-achievement i;
+    \item Sub-sub-achievement ii;
+    \item Sub-sub-achievement iii;
+    \end{itemize}
+  \item Sub-achievement (c);
+  \end{itemize}
+\item Achievement 3.
+\end{itemize}}
+\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newline{}Description line 2}
+\subsection{Miscellaneous}
+\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+\section{Languages}
+\cvitemwithcomment{Language 1}{Skill level}{Comment}
+\cvitemwithcomment{Language 2}{Skill level}{Comment}
+\cvitemwithcomment{Language 3}{Skill level}{Comment}
+
+\section{Computer skills}
+\cvdoubleitem{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+\cvdoubleitem{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+\cvdoubleitem{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+\section{Interests}
+\cvitem{hobby 1}{Description}
+\cvitem{hobby 2}{Description}
+\cvitem{hobby 3}{Description}
+
+% Publications from a BibTeX file without multibib
+%  for numerical labels: \renewcommand{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% CONSIDER MERGING WITH PREAMBLE PART
+%  to redefine the heading string ("Publications"): \renewcommand{\refname}{Articles}
+\nocite{Hafner:2011,Hafner:2009,Hafner:2010}
+%\bibliographystyle{plain}
+%\bibliography{publications}                        % 'publications' is the name of a BibTeX file
+\printbibliography
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}                   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}                   % 'publications' is the name of a BibTeX file
+
+\clearpage
+%-----       letter       ---------------------------------------------------------
+\end{document}
+
+
+%% end of file `template.tex'.

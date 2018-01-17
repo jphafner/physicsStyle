@@ -1,34 +1,31 @@
-%\documentclass[
-%	pagenumber=false, % Removes page numbers from page 2 onwards when false
-%	parskip=half, % Separates paragraphs with some whitespace, use parskip=full for more space or comment out to return to default
-%	fromalign=right, % Aligns the from address to the right
-%	foldmarks=true, % Prints small fold marks on the left of the page
-%	addrfield=true % Set to false to hide the addressee section - you will then want to adjust the height of the body of the letter on the page by adding the following in this section: \makeatletter \@setplength{refvpos}{\useplength{toaddrvpos}} \makeatletter
-%	]{scrlttr2}
-
-\documentclass[fontsize=11pt,jphafner]{scrlttr2}
+\documentclass[
+    jphafner,
+    fontsize=11pt,
+    foldmarks=true,
+    pagenumber=false,
+    addrfield=false,
+]{scrlttr2}
 
 \usepackage[T1]{fontenc} % For extra glyphs (accents, etc)
 \usepackage{stix} % Use the Stix font by default
 \usepackage[english]{babel} % Explicitly load the babel package to stop an error occurring on some LaTeX installations
-\usepackage{blindtext}
-
+%\usepackage{blindtext}
 \usepackage[utf8]{inputenc}
 \usepackage{lipsum}
 
+\date{\today}
+
 \begin{document}
-\begin{letter}{Maria Garcia \\ LaTeXTemplates.com \\ 123 Pleasant Lane \\ City, State 12345} % Addressee name and address
+\begin{letter}{John and Jane Doe \\ LaTeXTemplates.com \\ 123 Pleasant Lane \\ City, State 12345} % Addressee name and address
 \opening{Dear Sir or Madam:}
-
-\Blindtext
-
-%    \closing{Sincerely:}
 
 I am a geek, a skeptic and I wear bowties for fun.
 If you know only this, then you know enough.
 I hereby declare my interest for you open position of Dev Ops Engineer.
 I have attached my r\'{e}sum\'{e} and business card for your convenience.
 
+\closing{Sincerely:}
+%\encl{R\'{e}sum\'{e} and Business card}
 \end{letter}
 \end{document}
 

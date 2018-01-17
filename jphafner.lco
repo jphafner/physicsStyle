@@ -2,49 +2,76 @@
 
 \KOMAoptions{paper=letter}
 
-\setkomavar{fromname}{Jeffrey Hafner}
-\setkomavar{signature}{Jeffrey Hafner}
+%% From Definitions
+%%------------------------------------------------
+\setkomavar{fromname}{Jeffrey P. Hafner, PhD}
 \setkomavar{fromaddress}{%
     125 Radford St Apt 5A \\
-    Yonkers, NY 10705}
+    Yonkers, NY 10705-3016 
+}
+\setkomafont{fromname}{\textsc}
 
+\setkomavar{fromphone}{315-532-0278}\KOMAoptions{fromphone=true}
+\setkomavar{frommobilephone}{+1 315 532 0278}\KOMAoptions{frommobilephone=true}
 \setkomavar{fromemail}{jphafner@buffalo.edu}\KOMAoptions{fromemail=true}
-%\setkomavar{fromfax}{+1 888 555 4223}\KOMAoptions{fromfax=true}
-%\setkomavar{frommobilephone}{+1 315 532 0278}\KOMAoptions{frommobilephone=true}
-
-\setkomavar{fromphone}{+1 315 532 0278}\KOMAoptions{fromphone=true}
+\setkomavar{signature}{\usekomavar{fromname}}
+%\setkomavar{fromlogo}{\includegraphics{headshot}}
 \setkomavar{fromurl}{jphafner.github.io}\KOMAoptions{fromurl=true}
 
-\date{\today}
+%% Page Style
+\setkomafont{pagenumber}{\normalsize\normalcolor\textsc}
+%\date{\today}
 
-%\setkomavar{location}{%
-%  \raggedright\footnotesize{%
-%  \usekomavar{fromname}\\
-%  \usekomavar{fromaddress}\\
-%  \usekomavar*{fromphone}\usekomavar{fromphone}\\
-%  \usekomavar*{fromfax}\usekomavar{fromfax}\\
-%  \usekomavar*{fromemail}\usekomavar{fromemail}
-%  \usekomavar*{fromurl}\usekomavar{fromurl}}%
-%}
 
-%\setkomavar{opening}{Dear Sir or Madam,}
+
+%\setkomavar{opening}{Dear \usekomavar{toname}Sir or Madam,}
+%\setkomavar{opening}{Dear Sir or Madam:}
 %\setkomavar{closing}{Sincerely,}
 
-\setkomavar{firstfoot}{THIS IS THE FIRST FOOT}\KOMAoptions{firstfoot=true}
+%% Page Dimensions
+%%------------------------------------------------
+%\areaset[current]{\textwidth}{\textheight}
+\areaset[0cm]{14cm}{20cm}
+%\areaset[0cm]{16cm}{34cm}
+%\areaset[0cm]{14cm}{23cm}
+%\areaset[0cm]{12cm}{23cm}
+\recalctypearea
 
+%\@setplength{sigindent}{10em}
+%sigbeforevskip=true,
 
-%\setkomavar{firsthead}{%
-%  {\usekomafont{headtitle}\usekomavar{headtitle}\\}
-%  {\usekomafont{headsubtitle}\usekomavar{headsubtitle}\\}
-%  \noindent\hspace*{-\useplength{firstheadhpos}}%
-%  \includegraphics[width=\paperwidth]{uclbanner-outline}%
-%}
+%\pagestyle{myheadings}
+%\@addtoplength{firstfootvpos}{0mm}
+%\@setplength{firstheadvpos}{24mm}
+%% jphafner
+%\@setplength{firstheadvpos}{2\baselineskip}
+%\addtolength{\textheight}{15mm}
 
-\setkomavar{firstfoot}{%
-  \parbox[b]{\useplength{firstfootwidth}}{\raggedright
-  {\usekomafont{fromaddress}\usekomavar{fromaddress}
-  \ifkomavarempty{fromphone}{%
-    \ifkomavarempty{fromfax}{}{%
-      \\\usekomavar*{fromfax}\usekomavar{fromfax}%
-    }
+\@setplength{toaddrheight}{0mm}
+\@setplength{locheight}{0mm}
+\@setplength{refvpos}{12\baselineskip}
+
+\setkomafont{backaddress}{\scriptsize}
+\typeout{\scdefault}                                                                                                          
+\DeclareFixedFont{\fa}{\encodingdefault}{cmr}{m}{\scdefault}{12} 
+\DeclareFixedFont{\cc}{\encodingdefault}{cmr}{m}{\scdefault}{30} 
+
+%% Headers and Footers
+%%------------------------------------------------
+\setkomavar{firsthead}{
+    \centering{
+        \fontsize{22}{22}
+        \selectfont\scshape
+        \usekomavar{fromname}
+    }\\ %[5mm]
+    \normalsize
+    \selectfont\scshape
+    \usekomavar{fromaddress} \\
+    \usekomavar{fromemail}
+    \usekomavar{fromphone}
+    \usekomavar{fromlogo}
+}
+
+\setkomavar{firstfoot}{
+}
 
