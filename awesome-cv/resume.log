@@ -1,4 +1,4 @@
-This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2017.1.4)  16 JAN 2018 11:20
+This is LuaTeX, Version 0.95.0 (TeX Live 2016)  (format=lualatex 2017.1.4)  16 JAN 2018 20:23
  restricted system commands enabled.
 **resume.tex
 (./resume.tex
@@ -320,7 +320,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.111 seconds)
+luaotfload | main : initialization completed in 0.119 seconds)
 Lua module: fontspec 2016/02/01 2.5a Advanced font selection for LuaLaTeX.
 (/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
 Package: fontspec-luatex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
@@ -593,7 +593,9 @@ luaotfload | cache : Lookup cache loaded from /home/jphafner/.cache/texlive/texm
 f-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.(compiling luc: /us
 r/share/texlive/texmf-var/luatex-cache/generic/fonts/otl/fontawesome.luc)(load l
 uc: /home/jphafner/.cache/texlive/texmf-var/luatex-cache/generic/fonts/otl/fonta
-wesome.luc)
+wesome.luc)(save: /home/jphafner/.cache/texlive/texmf-var/luatex-cache/generic/f
+onts/otl/fontawesome.lua)(save: /home/jphafner/.cache/texlive/texmf-var/luatex-c
+ache/generic/fonts/otl/fontawesome.luc)
 luaotfload | aux : font no 22 (<unknown>) defines no feature for script latn
 luaotfload | aux : no font with id 22
 \g__fontspec_family_FontAwesome_int=\count133
@@ -1090,4 +1092,155 @@ LaTeX Info: Redefining \pageref on input line 6416.
 \c@Hfootnote=\count165
 )
 
-Package hyperre
+Package hyperref Message: Driver (autodetected): hluatex.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2016/05/21 v6.83p Hyperref driver for luaTeX
+\Fld@listcount=\count166
+\c@bookmark@seq@number=\count167
+
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
+2.
+)
+\Hy@SectionHShift=\skip78
+)
+luaotfload | db : Reload initiated (formats: otf,ttf,ttc); reason: "File not fou
+nd: fonts/.".
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! fontspec error: "font-not-found"
+! 
+! The font "" cannot be found.
+! 
+! See the fontspec documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.172 ]{}
+        %Roboto}
+? 
+luaotfload | aux : no font with id 0
+\g__fontspec_family__int=\count168
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! fontspec error: "font-not-found"
+! 
+! The font "-Bold" cannot be found.
+! 
+! See the fontspec documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.172 ]{}
+        %Roboto}
+? 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! fontspec error: "font-not-found"
+! 
+! The font "-Bold" cannot be found.
+! 
+! See the fontspec documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.172 ]{}
+        %Roboto}
+? 
+luaotfload | aux : no font with id 0
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! fontspec error: "font-not-found"
+! 
+! The font "-Italic" cannot be found.
+! 
+! See the fontspec documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.172 ]{}
+        %Roboto}
+? 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! fontspec error: "font-not-found"
+! 
+! The font "-Italic" cannot be found.
+! 
+! See the fontspec documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.172 ]{}
+        %Roboto}
+? 
+luaotfload | aux : no font with id 0
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! fontspec error: "font-not-found"
+! 
+! The font "-BoldItalic" cannot be found.
+! 
+! See the fontspec documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.172 ]{}
+        %Roboto}
+? 
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! fontspec error: "font-not-found"
+! 
+! The font "-BoldItalic" cannot be found.
+! 
+! See the fontspec documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.172 ]{}
+        %Roboto}
+? 
+luaotfload | aux : no font with id 0
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! fontspec error: "font-not-found"
+! 
+! The font "-Thin" cannot be found.
+! 
+! See the fontspec documentation for further information.
+! 
+! For immediate help type H <return>.
+!...............................................  
+                                                  
+l.180 ]{}
+        %Roboto}
+? 
+luaotfload | aux : no font with id 0
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+!
+! fontspec error: "font-not-found"
+! 
+! The font "-Thin" cannot be found.
+! 
+! See the fontspec documentation for further information.
+! 
+! For immediate help 
