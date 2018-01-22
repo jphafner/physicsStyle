@@ -1,8 +1,7 @@
 
 
-mystyle.sty
-
-
+$ convert IMG_1417.jpg -chop '0x10+100%+90%' rectangle.jpg
+_
 - mycard
 - myresume
 - mycover
