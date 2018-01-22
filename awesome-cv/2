@@ -1,0 +1,110 @@
+%-------------------------------------------------------------------------------
+%	SECTION TITLE
+%-------------------------------------------------------------------------------
+\cvsection{Projects}
+
+
+%-------------------------------------------------------------------------------
+%	CONTENT
+%-------------------------------------------------------------------------------
+\begin{cventries}
+  
+
+%---------------------------------------------------------
+\subsection{Courses}
+
+%---------------------------------------------------------
+  \cventry
+    {\href{www.nsf.gov}{NSF} REU}
+    {href{www.psu.edu}{Penn State University}
+    {\href{www.andrews.edu}{Andrews University}
+    {University Park, PA}
+    {Summer 2004}
+    {Implemented a monte carlo modeler in Matlab to model kinesin processivity under William Hancock.}
+
+%---------------------------------------------------------
+  \cventry
+    {PHY447: Advanced Lab 2} % CLass
+    {\href{www.andrews.edu}{Andrews University} % Organization
+    {Berrien Springs, MI} % Location
+    {Spring 2005} % Date
+    {Validated predicted reverberation times based on blue print of the \href{howard.andrews.edu}{Howard Performing arts center}}
+
+%---------------------------------------------------------
+
+
+%---------------------------------------------------------
+  \cventry
+    {PHY447: Advanced Lab 2}
+    {\href{www.andrews.edu}{Andrews University}}
+    {Berrien Springs, MI}
+    {Aug. 2014 - Apr. 2016}
+    {Validated predicted reverberation times based on blue prints of the \href{howard.andrews.edu}{Howard Performing arts center}}
+
+%---------------------------------------------------------
+  \cventry
+    {PHY506: Computational Physics 2}
+    {\href{www.buffalo.edu}{University at Buffalo}}
+    {Buffalo, NY}
+    {Spring 2008}
+    {Implemented a cellular automata traffic modeler in python}
+    \twentyitemshort
+
+%---------------------------------------------------------
+  \cventry
+	{PHY515: High Performance Computing 1}
+    {\href{www.buffalo.edu}{University at Buffalo}
+    {Buffalo, NY}
+    {Fall 2008}
+    {Implemented a cellular automata traffic modeler in python}
+    {Parallelized my dissertation project using ScaLAPACK}
+    \twentyitemshort
+
+%---------------------------------------------------------
+  \cventry
+    {CSE536: Computational Biology}
+    {\href{www.buffalo.edu}{University at Buffalo}
+    {Buffalo, NY}
+    {Fall 2011}
+	{Implemented a 2D Hydrophobic-Hydrophilic Protein folder utilizing \href{https://en.wikipedia.org/wiki/Ant_colony_optimization_algorithms}{Ant Colony Optimmization Algorithm} in \href{www.python.org}{Python}.}
+
+%---------------------------------------------------------
+  \cventry
+    {Doctoral Dissertation titled: \emph{Validation and Refinement of Course Grained Protein Models}
+    {\href{www.buffalo.edu}{University at Buffalo}
+    {Buffalo, NY}
+    {2008--2011}
+{
+\begin{cvitems}
+\item {About a 100 pages of text, Over 5000 lines of C, and 1000 lines of Python.}
+\item {Work was performed on the computing resources of \href{ccr.buffalo.edu}{UB Center for Computational Research}}
+\end{cvitems}
+}
+\subsection{Vocational}
+
+%---------------------------------------------------------
+  \cventry
+    {Physics Teacher} % Job title
+    {\href{https://github.com/jphafner/physicsAMC}{physicsAMC}}
+    {PhysicsAMC} % Location
+    {See Experience}
+    {Dec. 2014 - Mar. 2014} % Date(s)
+{
+\begin{cvitems}
+    \item {A comprehensive physics exam bank that utilizes an lpeg parser for question selection.}
+    \item {\href{https://github.com/jphafner/physicsAMC/blob/mc-project/kinematics-exam/sample-exam.pdf}
+\end{cvitems}
+}
+
+%---------------------------------------------------------
+\cventry
+  \cventry
+    {Physics Teacher} % Job title
+    {\href{https://github.com/jphafner/physicsReport}{physicsReport}}
+    {2014}
+    {An example lesson plan, and lab report template that I used while a physics teacher}
+
+
+%---------------------------------------------------------
+\end{cventries}
+

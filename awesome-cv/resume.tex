@@ -1,21 +1,31 @@
+%!TEX TS-program = xelatex
+%!TEX encoding = UTF-8 Unicode
+% Awesome CV LaTeX Template for CV/Resume
+%
+% This template has been downloaded from:
+% https://github.com/posquit0/Awesome-CV
+%
+% Author:
+% Claud D. Park <posquit0.bj@gmail.com>
+% http://www.posquit0.com
+%
+% Template license:
+% CC BY-SA 4.0 (https://creativecommons.org/licenses/by-sa/4.0/)
+%
+
+
+%-------------------------------------------------------------------------------
+% CONFIGURATIONS
+%-------------------------------------------------------------------------------
 % A4 paper size by default, use 'letterpaper' for US letter
-\documentclass[11pt, letterpaper]{awesome-cv}
+\documentclass[11pt, a4paper]{awesome-cv}
 
 % Configure page margins with geometry
 \geometry{left=1.4cm, top=.8cm, right=1.4cm, bottom=1.8cm, footskip=.5cm}
 
 % Specify the location of the included fonts
-%\fontdir[fonts/]
-\fontdir[/usr/share/fonts/fontawesome]
-%\usepackage{fontawesome}
-
-\usepackage[
-    style=numeric,
-    sorting=ydnt,
-    defernumbers=true,
-    backend=biber
-]{biblatex}
-\addbibresource{./publications.bib}
+\fontdir[/usr/share/fonts/]
+%\fontdir[/usr/share/texlive/texmf-dist/fonts/opentype/public/]
 
 % Color for highlights
 % Awesome Colors: awesome-emerald, awesome-skyblue, awesome-red, awesome-pink, awesome-orange
@@ -54,8 +64,7 @@
 \github{jphafner}
 \linkedin{jphafner}
 
-%\quote{``Be the change that you want to see in the world."}
-\quote{``Take at least one thing off''}
+\quote{``Before you leave the house, look in the mirror and take one thing off.''--Coco}
 
 
 %-------------------------------------------------------------------------------
@@ -77,17 +86,14 @@
 %	CV/RESUME CONTENT
 %	Each section is imported separately, open each file in turn to modify content
 %-------------------------------------------------------------------------------
-%\input{resume/summary.tex}
-\input{resume/education.tex}
-\input{resume/experience.tex}
-\input{resume/projects.tex}
-\input{resume/publications.tex}
-\input{resume/honors.tex}
-%\input{resume/presentation.tex}
-%\input{resume/writing.tex}
-%\input{resume/committees.tex}
-%\input{resume/extracurricular.tex}
+\input{myresume/summary.tex}
+\input{myresume/education.tex}
+\input{myresume/experience.tex}
+\input{myresume/projects.tex}
+%\input{myresume/publications.tex}
+\input{myresume/honors.tex}
 
 
 %-------------------------------------------------------------------------------
 \end{document}
+
