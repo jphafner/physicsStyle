@@ -1,27 +1,34 @@
-%-------------------------------------------------------------------------------
-%	SECTION TITLE
-%-------------------------------------------------------------------------------
-%\cvsection{References}
+\documentclass[
+    bstinga,
+    foldmarks=true,
+    pagenumber=false,
+    addrfield=true,
+    backaddress=false,
+    paper=letter,
+]{scrlttr2}
+
+\setkomavar{Subject}{2017 Performance Review}
+
+\usepackage[T1]{fontenc} % For extra glyphs (accents, etc)
+\usepackage{stix} % Use the Stix font by default
+\usepackage[english]{babel} % Explicitly load the babel package to stop an error occurring on some LaTeX installations
+%\usepackage{blindtext}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+
+\date{Jan 30, 2018}
+
+\begin{document}
+\begin{letter}{Jeffrey Hafner}{
+    250 Greenwich Street \\
+    Manhattan, New York 10007, United States}
+   
 
 
-%-------------------------------------------------------------------------------
-%	CONTENT
-%-------------------------------------------------------------------------------
+    %Main: 888.IPSOFT8  |  Direct: 212.708.5463  |  Brian.Stinga@ipsoft.com
 
-%---------------------------------------------------------
-%\begin{cvhonors}
-%  \cvhonor
-%    {IPsoft 2017 Performance Review} % Awar
-%    {\href{www.ipsoft.com}{IPsoft Inc.}}
-%    {Baltimore, MD}
-%    {2013--2014}
-%{
+\opening{}
 
-%---------------------------------------------------------
-\begin{cvskills}
-    \cvskill{2017 performance Review}
-  {
-\begin{cvparagraph}
 Customer Satisfaction: One drop for McKesson and 4 Merits overall in 2017. 
 Not perfect, but not bad at all. 
 Always aim to keep our clients happy and go that extra mile.
@@ -29,7 +36,7 @@ Innovation: You've put in significant effort into creating and optimizing automa
 Fantastic! It shows great initiative that exceeds most of the rest of your teammates'.
 Overall:
 
-Jeffrey,
+            Jeffrey,
 
 I know working 3rd shift presents a great challenge in keeping in touch with the vibe and camaraderie of the rest of the team, but you've handled it well. 
 You have done an admirable job working with the BLR team and Keith given the challenges; especially that this is your first real job in the field. 
@@ -48,10 +55,7 @@ Correct those issues promptly then put in the effort to increase your technical 
 Add in initiative to create more automation and create value for our clients and you will be on the fast track to a TL or TE role, or beyond.  
 Here's looking forward to accelerated growth and evolving in the year ahead!
 
--Brian
-\end{cvparagraph}
-}
-
-\end{cvskills}
-
+\closing{---Brian}
+\end{letter}
+\end{document}
 
