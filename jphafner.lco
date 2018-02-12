@@ -1,0 +1,70 @@
+\ProvidesFile{jphafner.lco}[2018/02/09 v1.0]
+
+
+\usepackage[T1]{fontenc} % For extra glyphs (accents, etc)
+\usepackage{stix} % Use the Stix font by default
+\usepackage[english]{babel} % Explicitly load the babel package to stop an error occurring on some LaTeX installations
+%\usepackage{blindtext}
+\usepackage[utf8]{inputenc}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{verbatim}
+
+\date{\today}
+
+\KOMAoptions{
+  foldmarks=off,
+  fromrule=false,
+  fontsize=11pt,
+  foldmarks=true,
+  pagenumber=false,
+  addrfield=false,
+}
+
+\setkomavar{fromname}{Jeffrey P. Hafner}
+
+\setkomavar{fromaddress}{125 Radford St Apt 5A Yonkers, NY 10705}
+\setkomavar{fromphone}{+1-315-532-0278}
+\setkomavar{fromemail}{jeffrey.p.hafner@gmail.com}
+\setkomavar{signature}{Jeffrey P Hafner}
+\setkomavar{date}{\today}
+
+\firsthead{%
+    \centering\scshape\LARGE
+    \usekomavar{fromname}
+
+    \usekomavar{fromphone}
+
+    \usekomavar{fromemail}
+}
+
+\pagestyle{myheadings}
+\@addtoplength{firstfootvpos}{5mm}
+\@setplength{firstheadvpos}{12mm}
+\@setplength{firstheadvpos}{12mm}
+\addtolength{\textheight}{15mm}
+
+
+\firstfoot{%
+      \scriptsize{
+        \parbox{\useplength{firstfootwidth}}{ 
+          %\rule{180mm}{0.5pt} 
+          \begin{tabular}{ll}
+	  \usekomavar{fromname}\\
+          \rechtsform\\
+	  \usekomavar{fromaddress}\\
+	    \end{tabular}\hfill
+          \begin{tabular}{cc}
+	  \usekomavar{fromemail}\\
+	  \usekomavar{fromphone}\\
+	  \usekomavar{fromfax}\\
+	  \ustid
+          \end{tabular}\hfill
+          \begin{tabular}{rr}
+	  \usekomavar{frombank}\\
+	             \end{tabular}
+       }}
+}
+
+\endinput
+% vim: set filetype=tex  :EOFo
