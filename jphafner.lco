@@ -1,70 +1,104 @@
-\ProvidesFile{jphafner.lco}[2018/02/09 v1.0]
+%%
+%% Copyright (C) 2014 Jeffrey P. Hafner <jphafner@bcps.k12.md.us>
+%%
+%%  This file is part of mervoPhysics
+%%  
+%%  mervoPhysics is free software: you can redistribute it and/or modify
+%%  it under the terms of the GNU General Public License as published by
+%%  the Free Software Foundation, either version 3 of the License, or
+%%  (at your option) any later version.
+%%  
+%%  This program is distributed in the hope that it will be useful,
+%%  but WITHOUT ANY WARRANTY; without even the implied warranty of
+%%  MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+%%  GNU General Public License for more details.
+%%  
+%%  You should have received a copy of the GNU General Public License
+%%  along with this program.  If not, see <http://www.gnu.org/licenses/>.
+%%
 
 
-\usepackage[T1]{fontenc} % For extra glyphs (accents, etc)
-\usepackage{stix} % Use the Stix font by default
-\usepackage[english]{babel} % Explicitly load the babel package to stop an error occurring on some LaTeX installations
-%\usepackage{blindtext}
-\usepackage[utf8]{inputenc}
-\usepackage{lipsum}
-\usepackage{graphicx}
-\usepackage{verbatim}
+\ProvidesFile{physicsLetter.lco}[%
+  2002/07/09 v0.9a LaTeX2e unsupported letter-class-option]
 
-\date{\today}
 
-\KOMAoptions{
-  foldmarks=off,
-  fromrule=false,
-  fontsize=11pt,
-  foldmarks=true,
-  pagenumber=false,
-  addrfield=false,
+%% From Definitions
+%%------------------------------------------------
+\setkomavar{fromname}{Jeffrey P. Hafner, PhD}
+\setkomavar{fromaddress}{%
+    125 Radford St Apt 5A \\
+    Yonkers, NY 10705-3016 
 }
+\setkomavar{fromphone}{315-532-0278}
+\setkomavar{fromemail}{jphafner@buffalo.edu}
+\setkomavar{signature}{\usekomavar{fromname}}
+%\setkomavar{fromlogo}{\includegraphics{headshot}}
+\setkomafont{fromname}{\textsc}
 
-\setkomavar{fromname}{Jeffrey P. Hafner}
+\setkomafont{pagenumber}{\normalsize\normalcolor\textsc}
 
-\setkomavar{fromaddress}{125 Radford St Apt 5A Yonkers, NY 10705}
-\setkomavar{fromphone}{+1-315-532-0278}
-\setkomavar{fromemail}{jeffrey.p.hafner@gmail.com}
-\setkomavar{signature}{Jeffrey P Hafner}
-\setkomavar{date}{\today}
 
-\firsthead{%
-    \centering\scshape\LARGE
-    \usekomavar{fromname}
+%% Page Dimensions
+%%------------------------------------------------
+%\areaset[current]{\textwidth}{\textheight}
+\areaset[0cm]{14cm}{20cm}
+%\areaset[0cm]{16cm}{34cm}
+%\areaset[0cm]{14cm}{23cm}
+%\areaset[0cm]{12cm}{23cm}
+\recalctypearea
 
-    \usekomavar{fromphone}
+%\@setplength{sigindent}{10em}
+%sigbeforevskip=true,
 
+%\pagestyle{myheadings}
+%\@addtoplength{firstfootvpos}{0mm}
+%\@setplength{firstheadvpos}{24mm}
+%% jphafner
+%\@setplength{firstheadvpos}{2\baselineskip}
+%\addtolength{\textheight}{15mm}
+
+\@setplength{toaddrheight}{0mm}
+\@setplength{locheight}{0mm}
+\@setplength{refvpos}{12\baselineskip}
+
+%\setkomafont{backaddress}{\scriptsize}
+%\typeout{\scdefault}                                                                                                          
+%\DeclareFixedFont{\fa}{\encodingdefault}{cmr}{m}{\scdefault}{12} 
+%\DeclareFixedFont{\cc}{\encodingdefault}{cmr}{m}{\scdefault}{30} 
+
+
+%% Headers and Footers
+%%------------------------------------------------
+\setkomavar{firsthead}{
+    \centering{
+        \fontsize{22}{22}
+        \selectfont\scshape
+        \usekomavar{fromname}
+    }\\ %[5mm]
+    \normalsize
+    \selectfont\scshape
+    \usekomavar{fromaddress} \\
     \usekomavar{fromemail}
+    \usekomavar{fromphone}
+    \usekomavar{fromlogo}
 }
 
-\pagestyle{myheadings}
-\@addtoplength{firstfootvpos}{5mm}
-\@setplength{firstheadvpos}{12mm}
-\@setplength{firstheadvpos}{12mm}
-\addtolength{\textheight}{15mm}
+\setkomavar{nexthead}{
+    \normalsize
+    \selectfont\scshape
+    %\usekomavar{fromname}
+    \hfill
+    %\usekomavar{subject}
+}
 
+\setkomavar{firstfoot}{
+}
 
-\firstfoot{%
-      \scriptsize{
-        \parbox{\useplength{firstfootwidth}}{ 
-          %\rule{180mm}{0.5pt} 
-          \begin{tabular}{ll}
-	  \usekomavar{fromname}\\
-          \rechtsform\\
-	  \usekomavar{fromaddress}\\
-	    \end{tabular}\hfill
-          \begin{tabular}{cc}
-	  \usekomavar{fromemail}\\
-	  \usekomavar{fromphone}\\
-	  \usekomavar{fromfax}\\
-	  \ustid
-          \end{tabular}\hfill
-          \begin{tabular}{rr}
-	  \usekomavar{frombank}\\
-	             \end{tabular}
-       }}
+\setkomavar{nextfoot}{
+    %\scriptsize
+    %\hfill\usekomavar{fromname}
 }
 
 \endinput
-% vim: set filetype=tex  :EOFo
+
+
