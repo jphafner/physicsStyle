@@ -30,7 +30,7 @@
     Yonkers, NY 10705-3016 
 }
 \setkomavar{fromphone}{315-532-0278}
-\setkomavar{fromemail}{jphafner@buffalo.edu}
+\setkomavar{fromemail}{jeffrey.p.hafner@gmail.com} %jphafner@buffalo.edu}
 \setkomavar{signature}{\usekomavar{fromname}}
 %\setkomavar{fromlogo}{\includegraphics{headshot}}
 \setkomafont{fromname}{\textsc}
@@ -78,7 +78,7 @@
     \normalsize
     \selectfont\scshape
     \usekomavar{fromaddress} \\
-    \usekomavar{fromemail}
+    \usekomavar{fromemail} \\
     \usekomavar{fromphone}
     \usekomavar{fromlogo}
 }
