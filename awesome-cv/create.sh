@@ -10,5 +10,10 @@ done
 
 
 latexmk -c
-rm -f resume-${color}.tex
+
+
+for color in ${colors[@]}; do
+    rm -f resume-${color}.tex
+    mv resume-${color}.pdf ./output/
+done
 
