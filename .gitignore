@@ -24,6 +24,4 @@
 *.synctex.gz
 ./awesome-cv/output/*.pdf
 ./awesome-cv/*.pdf
-judge.*
-rutgers.*
 
