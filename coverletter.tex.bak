@@ -15,21 +15,17 @@
 \usepackage{hyperref}
 
 \date{\today}
-\setkomavar{subject}{Comupter Scientist}
+\setkomavar{subject}{Business Data Analyst}
 
 \begin{document}
-     %Computer Scientist Air Force Personnel Center Closes 9/30/2018
-
-\begin{letter}{Air Force Personnel Center \\ Multiple Locations} % Addressee name and address
-\opening{Dear Air Force Personnel Center:}
-
-
+\begin{letter}{Turino Stone Casino \\ Syracuse, NY} % Addressee name and address
+\opening{Dear Turning Stone Casino:}
 
     %I have taught High School physics for two years.
     %I have worked tirelessly on \href{https://github.com/jphafner/physicsAMC}{physicsAMC}, my project to give students infinite redos.
     %I have enclosed two letters of reference, and my teaching philosphy.
 
-    %With a unique combination of education and hands-on IT experience, I am confident that I will make an immediate and impactful contribution as your Business Data Analyst at Turning Stone Casino.
+    With a unique combination of education and hands-on IT experience, I am confident that I will make an immediate and impactful contribution as your Business Data Analyst at Turning Stone Casino.
     
     %Lead Software Engineer at Syracuse Research^.
     %Linux Engineer Mid at your Boox Allen Hamilton.

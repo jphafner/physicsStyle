@@ -26,8 +26,11 @@
 %%------------------------------------------------
 \setkomavar{fromname}{Jeffrey P. Hafner, PhD}
 \setkomavar{fromaddress}{%
-    4141 51st St, Apt 5f \\
-    Woodside, NY 11377 
+    9129 Main St \\
+    Westernville, NY 13486 
+
+    %    4141 51st St, Apt 5f \\
+    %    Woodside, NY 11377 
 }
 \setkomavar{fromphone}{315-532-0278}
 \setkomavar{fromemail}{jeffrey.p.hafner@gmail.com} %jphafner@buffalo.edu}
