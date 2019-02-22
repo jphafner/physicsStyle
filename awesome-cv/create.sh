@@ -14,6 +14,6 @@ latexmk -c
 
 for color in ${colors[@]}; do
     rm -f resume-${color}.tex
-    mv resume-${color}.pdf ./output/
+    mv resume-${color}.pdf ./output4/
 done
 
