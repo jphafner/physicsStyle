@@ -26,8 +26,12 @@
 %%------------------------------------------------
 \setkomavar{fromname}{Jeffrey P. Hafner, PhD}
 \setkomavar{fromaddress}{%
-    9129 Main St \\
-    Westernville, NY 13486 
+    192 Victory Lane \\
+    Leetsdale, PA 15056
+
+    %9129 Main St \\
+    %Westernville, NY 13486 
+
     %    4141 51st St, Apt 5f \\
     %    Woodside, NY 11377 
 }
