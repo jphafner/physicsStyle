@@ -22,7 +22,10 @@
 *.mtc1
 *.out
 *.synctex.gz
+
 ./awesome-cv/output/*.pdf
 ./awesome-cv/output2/*.pdf
 ./awesome-cv/*.pdf
 #./*.pdf
+
+
